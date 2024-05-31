@@ -1,0 +1,50 @@
+{
+  "ticketTotalCount": 9,
+  "ticket": [
+    {
+      "url": "https://www.nba.com/sixers/tickets/single-game",
+      "response": 5000,
+      "title": "Single Game Tickets"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/society76",
+      "response": 2000,
+      "title": "Season Tickets"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/partials",
+      "response": 2000,
+      "title": "Partial Plans"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/group",
+      "response": 1500,
+      "title": "Group Tickets"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/premium",
+      "response": 1500,
+      "title": "Premium Tickets"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/student-rush",
+      "response": 2000,
+      "title": "Student Rush"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/referrals",
+      "response": 1200,
+      "title": "Ticket Info Request"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/my-sixers-tickets",
+      "response": 1200,
+      "title": "Member Center"
+    },
+    {
+      "url": "https://www.nba.com/sixers/tickets/faq",
+      "response": 1200,
+      "title": "FAQ"
+    }
+  ]
+}

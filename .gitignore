@@ -1,0 +1,10 @@
+*.log
+.idea/
+temp/
+target/
+output/
+build/
+.iws
+/shelf/
+/workspace.xml
+tasks.xml
