@@ -11,7 +11,7 @@ Veeva-TAF is functional automation testing framework for UI and API's testing. T
 - [Supported and Tested Browsers](#browser-support)
 
 # Architecture <a name="architecture"></a>
-![img_1.png](img_1.png)
+![img_5.png](img_5.png)
 * * *
 
 # Tools <a name="tools"></a>
