@@ -1,0 +1,4 @@
+org\veeva\atf\stepdefinition\BaseStepDefinition.class
+org\veeva\atf\stepdefinition\NBASixerStepDefinition.class
+org\veeva\atf\steps\NBASixerSteps.class
+runner\TestRunner.class

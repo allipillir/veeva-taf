@@ -16,7 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <serenity.version>4.1.14</serenity.version>
+        <serenity.version>4.1.12</serenity.version>
         <serenity-single-page.version>4.1.14</serenity-single-page.version>
         <commons-lang3.version>3.14.0</commons-lang3.version>
         <junit-jupiter-engine.version>5.10.2</junit-jupiter-engine.version>
@@ -26,7 +26,7 @@
         <junit-platform-suite.version>1.10.0</junit-platform-suite.version>
         <cucumber-junit-platform-engine.version>7.13.0</cucumber-junit-platform-engine.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
-        <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
+        <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
         <maven.failsafe.plugin.version>3.1.2</maven.failsafe.plugin.version>
         <opentest4j.version>1.2.0</opentest4j.version>
         <maven-jar-plugin.version>3.4.1</maven-jar-plugin.version>
@@ -34,9 +34,7 @@
         <junit.jupiter.version>5.0.0-M2</junit.jupiter.version>
         <lombok.version>1.18.26</lombok.version>
         <jackson.version>2.15.1</jackson.version>
-        <env>qa</env>
-        <webdriver.base.url></webdriver.base.url>
-        <tags>api</tags>
+        <tags>web</tags>
     </properties>
     <dependencyManagement>
         <dependencies>

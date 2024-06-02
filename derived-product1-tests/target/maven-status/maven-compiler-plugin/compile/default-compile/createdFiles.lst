@@ -1,1 +1,6 @@
-org\veeva\atf\App.class
+org\veeva\atf\model\Ticket.class
+org\veeva\atf\pages\SixersHomePage.class
+org\veeva\atf\model\TicketDetails.class
+org\veeva\atf\task\NavigateTo.class
+org\veeva\atf\constants\SessionVariable.class
+org\veeva\atf\messages\DPOneErrors.class
