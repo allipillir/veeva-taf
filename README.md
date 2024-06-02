@@ -7,10 +7,8 @@ Veeva-TAF is functional automation testing framework for UI and API's testing. T
 - [Framework Hierarchy](#framework-hierarchy)
 - [Framework Set up](#framework-set-up)
 - [Reporting](#reporting)
-  - [Screenshots](#screenshots)
-  - [Video Recording](#video-recording)
-- [Selenium Grid](#selenium-grid)
-- [Browser versions](#bonigarcia)
+- [Execution Commands](#execution)
+- [Supported and Tested Browsers](#browser-support)
 
 # Architecture <a name="architecture"></a>
 ![img_1.png](img_1.png)
@@ -55,5 +53,30 @@ Framework is designed to give reports individually to each sub-module. This appr
 Framework is inbuilt with Serenity Reports for test scripts results, these reports can be seen in under "<Project/Module>\target\site\serenity\index.html"
 ![img_3.png](img_3.png)
 * * *
-# Selenium Grid <a name="selenium-grid"></a>
+# Execution Commands <a name="selenium-grid"></a>
+To execute web test across all modules 
+##### Example
+'''
+To execute all web tests under project suite  \
+  mvn clean install -Dcucumber.filter.tags="@web" 
+
+To execute all test under Core Product module \
+    mvn clean install -Dcucumber.filter.tags="@cp"
+
+To execute all test under Derived Product One module \
+-- mvn clean install -Dcucumber.filter.tags="@dp1"
+
+To execute all test under Derived Product Tne module \
+-- mvn clean install -Dcucumber.filter.tags="@dp2"
+
+To execute only smoke suite \
+-- mvn clean install -Dcucumber.filter.tags="@smoke"
+'''
+##### Supported Browsers
+'''
+This Project executed and supports \
+         Microsoft EdgeEdge Version 125.0.2535.79 \
+         FireFox Version 1260.1 \
+         Google Chrome Version  125.0.6422. |
+'''
 In order to get more information about selenium grid integration with this framework, please contact rameshbabua2003@gmail.com
