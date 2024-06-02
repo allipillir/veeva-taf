@@ -10,6 +10,9 @@ public class SessionVariable {
     public static final Duration MAX_WAIT_TIME = Duration.ofSeconds(60);
 
     public static final Duration DEFAULT_WAIT_TIME = Duration.ofSeconds(15);
+    public static final boolean BOOLEAN_TRUE = true;
+
+    public static final boolean BOOLEAN_FALSE = false;
 
     public static final long WAIT_TIME = 20000;
 

@@ -1,6 +1,7 @@
 package org.veeva.atf.stepdefinition;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,6 +34,14 @@ public class CoreProductStepDefinition {
                 .attemptsTo(CoreProductSteps.selectProductType(actor, searchRequest.get("Category"), searchRequest.get("Type")));
     }
 
+    @When("User {actor} navigates to News & Features from {string} Menu")
+    public void searchNewsFeatures(Actor actor, String dotsMenu) {
+        actor.wasAbleTo(CoreProductSteps.selectNNBAMenu());
+        actor.wasAbleTo(CoreProductSteps.navigateToNewFeature());
+    }
+
+
+
     @Then("user {actor} should be able to view price, title and top seller details")
     public void viewProductDetails(Actor actor) {
         theActorInTheSpotlight()
@@ -40,4 +49,16 @@ public class CoreProductStepDefinition {
 
     }
 
+    @Then("user {actor} validate total count {int} videos feed")
+    public void validateTotalVideoCount(Actor actor, int totalCount) {
+        theActorInTheSpotlight()
+                .attemptsTo(CoreProductSteps.validateVideoFeedCount(actor, totalCount));
+
+    }
+
+    @And("user {actor} validate {int} videos feeds those are present more than {int} day in the page")
+    public void validateVideoPresence(Actor actor, int count, int day) {
+        theActorInTheSpotlight()
+                .attemptsTo(CoreProductSteps.validateVideoPresenceInPage(actor, count,day));
+    }
 }
