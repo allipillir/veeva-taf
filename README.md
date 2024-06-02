@@ -53,7 +53,7 @@ Framework is designed to give reports individually to each sub-module. This appr
 Framework is inbuilt with Serenity Reports for test scripts results, these reports can be seen in under "<Project/Module>\target\site\serenity\index.html"
 ![img_3.png](img_3.png)
 * * *
-# Execution Commands <a name="selenium-grid"></a>
+# Execution Commands <a name="execution"></a>
 To execute web test across all modules 
 ##### Example
 '''
@@ -72,7 +72,7 @@ To execute all test under Derived Product Tne module \
 To execute only smoke suite \
 -- mvn clean install -Dcucumber.filter.tags="@smoke"
 '''
-##### Supported Browsers
+# Supported Browsers  <a name="browser-support"></a>
 '''
 This Project executed and supports \
          Microsoft EdgeEdge Version 125.0.2535.79 \
