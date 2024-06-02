@@ -3,7 +3,7 @@ Veeva-TAF is functional automation testing framework for UI and API's testing. T
 ![img.png](img.png)
 ## Table of content
 - [Architecture](#architecture)
-- [Tools](#tools)
+- [Technology Stack](#tools)
 - [Framework Hierarchy](#framework-hierarchy)
 - [Framework Set up](#framework-set-up)
 - [Reporting](#reporting)
@@ -13,16 +13,18 @@ Veeva-TAF is functional automation testing framework for UI and API's testing. T
 - [Browser versions](#bonigarcia)
 
 # Architecture <a name="architecture"></a>
-![Litmus](readmefiles/litmus.png)
+![img_1.png](img_1.png)
 * * *
 
 # Tools <a name="tools"></a>
-* [Selenium](https://www.selenium.dev/documentation/en/webdriver/)
+* [Serenity BDD](https://serenity-bdd.info/)
 * [Cucumber](https://cucumber.io/docs/cucumber/)
-* [Gherkin Syntax](https://cucumber.io/docs/gherkin/)
-* [Weld for Dependency Injection](https://weld.cdi-spec.org/)
-* [Little bit of docker](https://www.docker.com/get-started)
+* [Screenplay Design Pattern](https://serenity-bdd.info/)
+* [Rest Assured](https://cucumber.io/docs/gherkin/)
+* [Java11](https://www.oracle.com/java/technologies/downloads/)
+* [Little bit of docker](https://www.docker.com/)
 * [Jenkins](https://www.jenkins.io/doc/)
+* ![img_2.png](img_2.png)
 * * *
 
 # Framework Hierarchy <a name="framework-hierarchy"></a>
@@ -33,48 +35,25 @@ Let's say even if your team has multiple modules like module1, module2, module3;
 
 > **_NOTE:_** For multi-module team please create only *one automation repository*. Do not create multiple automation repositories.
 
-Framework is designed to give reports individually to each sub-module. This approach helps us to see smoke testing reports of all the modules in single place in [Jenkins](#Jenkins Integration).
+Framework is designed to give reports individually to each sub-module. This approach helps us to see smoke testing reports of all the modules in single place .
+![img_4.png](img_4.png)
 * * *
 
 # Framework Set up <a name="framework-set-up"></a>
-1. Fork this [repo](https://git.csx.com/projects/ENTREF/repos/litmus/browse). 
-   
-![Fork Repo](readmefiles/forkrepo.png)
-3. After forking the repo, give the name to this repo, for example [team name]-automation.
-   
-![Give a name to repo](readmefiles/renamerepo.png)
-5. If needed please change the name in pom.xml too. Even if we do not change it, it is not going to having any impact because we do not create artifact of this repo.
-6. It is recommended to change the modules (selenium, rest-assured) names as per teams requirements.
-7. Dont forget to update this README.md after forking :D.
-> **_NOTE:_** While changing the repository name please do not forget to handle this change in main pom xml. If you are changing sub-module name please change accordingly in sub-module pom xml and in main pom dependencies section. 
+1. Install Java 11 , as this project built on Java 11
+2. Setup Maven build tool
+3. Intellij idea as development editor (optional)
+4. Install Cucumber for Java plug-ins in your IDE
+5. Setup Source Code Compilation version to Java 8 or higher.
+4. Clone Github project this [repo](https://github.com/allipillir/veeva-taf.git).
+5. Build the project to resolve all the depedencies. 
 * * *
 # Jenkins Integration <a name="jenkins-integration"></a>
-This framework is automatically linked to Jenkins because of Jenkinsfile in the repository. To know more about the content of the Jenkinsfile please refer to this [link](https://git.csx.com/projects/JENK/repos/jenkins-lib-web-automation-testing/browse). Please read carefully about *cucumberTagToRun* in this link. 
-
-## Jenkins URL <a name="jenkins-url"></a>
-This is the [base url of jenkins](https://jenkins.apps.ocpjaxp001.csx.com/). In order to see your automation repository in jenkins please navigate to your team folder and look for your automation repository.
-
-> **_NOTE:_** If you do not see your automation repository in jenkins, please click *Scan Organization Folder Now* under your team in jenkins.
-* * *
-![Scan Jenkins](readmefiles/jenkinsscan.png)
+ Future Scope 
 
 # Reporting <a name="reporting"></a>
-Framework is inbuilt with reports for test scripts results, these reports can be seen in [Jenkins](#Jenkins URL) in *Artifacts*.
-
-![Report](readmefiles/report.png)
-
-## Screenshots <a name="screenshots"></a>
-Framework integrated with capability to take screenshots automatically when a test script fails. These screenshots are integrated in [report](#Reporting) automatically. 
-
-![Sample screenshot](readmefiles/screenshot.png)
-
-## Video Recording <a name="video-recording"></a>
-Video recording is enabled only for local environment because of resources constraint in higher environments.
-
-> **_NOTE_** *localVideoRecord* is system property used to enable/disable video recording functionality. By default video recording is disabled. In order to enable video recording please add system property *localVideoRecord* value to be *true* in either eclipse or maven command.
-* * *
-# Bonigarcia <a name="bonigarcia"></a>
-In order to handle selenium drivers for different browser versions and operating systems, this framework uses external dependency called [bonigarcia](https://github.com/bonigarcia/webdrivermanager).
+Framework is inbuilt with Serenity Reports for test scripts results, these reports can be seen in under "<Project/Module>\target\site\serenity\index.html"
+![img_3.png](img_3.png)
 * * *
 # Selenium Grid <a name="selenium-grid"></a>
-In order to get more information about selenium grid integration with this framework, please visit this [wiki link](https://wiki.csx.com/display/AD/Selenium+Grid).
+In order to get more information about selenium grid integration with this framework, please contact rameshbabua2003@gmail.com
