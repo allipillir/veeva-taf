@@ -34,7 +34,7 @@ public class BaseStepDefinition {
     }
 
     @SneakyThrows
-    @After(value="@reset")
+    @After
     public void restartBrowser() {
 
         if (Serenity.getWebdriverManager().getCurrentDriver() != null) {
