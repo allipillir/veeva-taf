@@ -37,8 +37,9 @@ public class CoreProductSteps {
     public static final String PRODUCT_FILE = "PRODUCT_DETAILS";
 
     public static Performable closeWarriorsInsider() {
+        delayMinTime();
         return Task.where("Close Warriors Insider signing process",
-                Click.on(CLOSE_SIGNUP_BUTTON_TO_SIGNUP_WARRIORS.waitingForNoMoreThan(MIN_WAIT_TIME))
+                Click.on(CLOSE_SIGNUP_BUTTON_TO_SIGNUP_WARRIORS.waitingForNoMoreThan(MAX_WAIT_TIME))
         );
     }
 

@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
 
 public class WarriorsLandingPage extends PageObject {
-    public static Target CLOSE_SIGNUP_BUTTON_TO_SIGNUP_WARRIORS = Target.the("Close Signup process for Warriors insider ").located(By.xpath("(//div[contains(text(), 'x')])[3]"));
+    public static Target CLOSE_SIGNUP_BUTTON_TO_SIGNUP_WARRIORS = Target.the("Close Signup process for Warriors insider ").located(By.xpath("//div[contains(text(), 'x')]"));
     public static Target SELECT_NBA_MENU_ITEM = Target.the("Select {0} menu item from NBA Menu for product category selection").locatedBy("(//a/span[contains(text(), '{0}')])[1]");
 
     public static Target SELECT_NBA_EXT_MENU_ITEM = Target.the("Select ... menu item from NBA Menu for additional menu items ").locatedBy("(//a/span[contains(text(), '...')])[1]");
